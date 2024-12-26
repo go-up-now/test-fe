@@ -1,0 +1,104 @@
+/* partners Section */
+.partners {
+    width: 1803px;
+    height: auto;
+    margin-top: 140px;
+    gap: 80px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.partners .partner-title {
+    width: 566px;
+    height: 52px;
+    gap: 20px;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 52px;
+    align-items: center;
+    color: #191919;
+}
+
+.partners .partner-logos {
+    width: 1803px;
+    height: 132px;
+    gap: 186px;
+    display: flex;
+    justify-content: center;
+}
+
+.partners .partner-logos .image img {
+    width: 98.15px;
+    height: 132px;
+}
+
+/* Tablet and Mobile Responsiveness */
+@media (max-width: 1024px) {
+    .partners {
+        width: 1024px;
+    }
+
+    .partners .partner-title {
+        font-size: 32px;
+        width: 50%;
+        text-align: center;
+    }
+
+    .partners .partner-logos {
+        width: 60%;
+        gap: 50px;
+        /* Adjust gap for smaller screens */
+        justify-content: space-between;
+    }
+
+    .partners .partner-logos .image img {
+        width: 80px;
+        height: 105px;
+        /* Adjust logo size for smaller screens */
+    }
+}
+
+@media (max-width: 768px) {
+    .partners {
+        width: 768px;
+    }
+
+    .partners .partner-title {
+        font-size: 28px;
+        width: 50%;
+        /* Slightly smaller title font for mobile */
+    }
+
+    .partners .partner-logos {
+        gap: 20px;
+        /* Reduce gap on mobile */
+        flex-wrap: wrap;
+        /* Allow logos to wrap on mobile */
+        justify-content: center;
+    }
+
+    .partners .partner-logos .image img {
+        width: 45px;
+        /* Even smaller logo size */
+        height: 90px;
+    }
+}
+
+@media (max-width: 480px) {
+    .partners {
+        width: 480px;
+        height: auto;
+    }
+
+    .partners .partner-title {
+        font-size: 24px;
+        /* Smaller title font for very small screens */
+    }
+
+    .partners .partner-logos .image img {
+        width: 30px;
+        /* Adjust for very small screens */
+        height: 50px;
+    }
+}

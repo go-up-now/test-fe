@@ -1,0 +1,315 @@
+/* Service US Section */
+.our-services {
+    position: relative;
+    width: 1920px;
+    height: 1032px;
+    background-image: url('../assets/service.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(40, 50, 72, 0.5);
+}
+
+.our-services::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(40, 50, 72, 0.5);
+    z-index: 1;
+}
+
+.service {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 2;
+}
+
+/* Dịch vụ theo chiều dọc */
+.service .service-vertical {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 595px;
+    height: 819px;
+    gap: 56px;
+}
+
+/* Tiêu đề dịch vụ */
+.service .service-vertical .servier-title {
+    width: 595px;
+    height: 52px;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 52px;
+    color: #FAFAFA;
+}
+
+/* Hiệu ứng vòng tròn */
+.service .service-vertical .circle-effect {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 595px;
+    height: 595px;
+}
+
+.service .service-vertical .circle-effect .circle-1 {
+    width: 595px;
+    height: 595px;
+}
+
+.service .service-vertical .circle-effect .circle-2 {
+    width: 549px;
+    height: 549px;
+}
+
+.service .service-vertical .circle-effect .circle-3 {
+    width: 512px;
+    height: 512px;
+    border: 1px solid #F14B23;
+}
+
+/* Các vòng tròn */
+.circle-1,
+.circle-2,
+.circle-3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    border: 1px solid #FAFAFA;
+}
+
+/* Hình ảnh dịch vụ */
+.service-img {
+    width: 472px;
+    height: 472px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center;
+}
+
+/* Dịch vụ theo chiều ngang */
+.service-horizontal {
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    width: 1196px;
+    height: auto;
+    margin-left: -257px;
+}
+
+/* Mô tả dịch vụ */
+.service-horizontal .description {
+    width: 355px;
+    height: 36px;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 36px;
+    color: #FFFFFF;
+}
+
+/* Nút "services-btn" */
+.services-btn {
+    width: 56px;
+    height: 56px;
+    background-color: #FFFFFF;
+    color: #F14B23;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+/* Responsive for tablet and mobile */
+@media (max-width: 1024px) {
+    .our-services {
+        height: 1000px;
+        max-width: 996px;
+    }
+
+    .service .service-vertical {
+        width: 80%;
+        height: auto;
+        gap: 40px;
+    }
+
+    .service .service-vertical .servier-title {
+        font-size: 32px;
+    }
+
+    .service .service-vertical .circle-effect {
+        width: 450px;
+        height: 450px;
+    }
+
+    .service .service-vertical .circle-effect .circle-1 {
+        width: 450px;
+        height: 450px;
+    }
+
+    .service .service-vertical .circle-effect .circle-2 {
+        width: 400px;
+        height: 400px;
+    }
+
+    .service .service-vertical .circle-effect .circle-3 {
+        width: 380px;
+        height: 380px;
+    }
+
+    .service-img {
+        width: 380px;
+        height: 380px;
+    }
+
+    .service-horizontal {
+        width: 90%;
+        margin-left: 0;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .service-horizontal .description {
+        font-size: 20px;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .services-btn {
+        margin-top: 10px;
+    }
+}
+
+@media (max-width: 768px) {
+    .our-services {
+        height: 800px;
+        max-width: 768px;
+    }
+
+    .service .service-vertical {
+        width: 100%;
+        height: auto;
+        gap: 30px;
+    }
+
+    .service .service-vertical .servier-title {
+        font-size: 28px;
+    }
+
+    .service .service-vertical .circle-effect {
+        width: 350px;
+        height: 350px;
+    }
+
+    .service .service-vertical .circle-effect .circle-1 {
+        width: 350px;
+        height: 350px;
+    }
+
+    .service .service-vertical .circle-effect .circle-2 {
+        width: 320px;
+        height: 320px;
+    }
+
+    .service .service-vertical .circle-effect .circle-3 {
+        width: 300px;
+        height: 300px;
+    }
+
+    .service-img {
+        width: 300px;
+        height: 300px;
+    }
+
+    .service-horizontal {
+        width: 100%;
+        margin-left: 0;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .service-horizontal .description {
+        font-size: 18px;
+        text-align: center;
+        margin-bottom: 15px;
+    }
+
+    .services-btn {
+        width: 48px;
+        height: 48px;
+    }
+}
+
+@media (max-width: 480px) {
+    .our-services {
+        height: 500px;
+        max-width: 480px;
+    }
+
+    .service .service-vertical {
+        width: 100%;
+        height: auto;
+        gap: 20px;
+    }
+
+    .service .service-vertical .servier-title {
+        font-size: 24px;
+    }
+
+    .service .service-vertical .circle-effect {
+        width: 300px;
+        height: 300px;
+    }
+
+    .service .service-vertical .circle-effect .circle-1 {
+        width: 300px;
+        height: 300px;
+    }
+
+    .service .service-vertical .circle-effect .circle-2 {
+        width: 280px;
+        height: 280px;
+    }
+
+    .service .service-vertical .circle-effect .circle-3 {
+        width: 260px;
+        height: 260px;
+    }
+
+    .service-img {
+        width: 260px;
+        height: 260px;
+    }
+
+    .service-horizontal {
+        width: 100%;
+        margin-left: 0;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .service-horizontal .description {
+        font-size: 16px;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    .services-btn {
+        width: 40px;
+        height: 40px;
+    }
+}

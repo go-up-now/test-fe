@@ -1,0 +1,274 @@
+/* Customer */
+.customer {
+    width: 1920px;
+    height: 800px;
+    background-color: #283248;
+    padding: 138px 460px;
+    text-align: center;
+}
+
+.container-customer {
+    width: 1000px;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.customer-title-dot {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 710px;
+    gap: 40px;
+}
+
+.customer-title {
+    width: 710px;
+    height: 52px;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 52px;
+    align-items: center;
+    color: #FAFAFA;
+}
+
+.customer-title-dot .dots {
+    position: relative;
+    gap: 32px;
+    margin-bottom: 80px;
+}
+
+.prev,
+.next {
+    position: absolute;
+    top: 25%;
+    transform: translateY(-50%);
+    font-size: 24px;
+    color: white;
+    cursor: pointer;
+    user-select: none;
+}
+
+.prev {
+    left: -40px;
+}
+
+.next {
+    right: -40px;
+}
+
+.customer-box {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 1000px;
+    height: auto;
+    gap: 40px;
+}
+
+.box {
+    width: 480px;
+    height: 312px;
+    border-radius: 40px;
+    background-color: #FAFAFA;
+}
+
+.box .box-in {
+    display: flex;
+    width: auto;
+    height: auto;
+    margin: 58px 30px;
+    gap: 16px;
+}
+
+.image-box {
+    width: 80px;
+    height: 80px;
+}
+
+.image-box img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.box-content {
+    width: 324px;
+    height: auto;
+    gap: 20px;
+}
+
+.box-description {
+    width: 324px;
+    height: 128px;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 32px;
+    text-align: justify;
+}
+
+.note {
+    width: 324px;
+    height: auto;
+    gap: 83px;
+    display: flex;
+}
+
+.note i {
+    width: 48px;
+    height: 48px;
+    color: #1919194D;
+}
+
+/* Tablet */
+@media (max-width: 1024px) {
+    .customer {
+        max-width: 1024px;
+        height: auto;
+    }
+
+    .container-customer {
+        width: 90%;
+    }
+
+    .customer-title-dot {
+        width: 600px;
+    }
+
+    .customer-title {
+        font-size: 32px;
+        width: 600px;
+    }
+
+    .customer-title-dot .dots {
+        margin-bottom: 60px;
+    }
+
+    .customer-box {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        height: auto;
+        gap: 20px;
+    }
+
+    .box {
+        width: 100%;
+        height: 280px;
+    }
+
+    .box .box-in {
+        margin: 30px 20px;
+    }
+
+    .box-description {
+        font-size: 18px;
+        line-height: 28px;
+    }
+
+    .note {
+        gap: 40px;
+    }
+
+    .prev,
+    .next {
+        font-size: 18px;
+    }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+    .customer {
+        max-width: 768px;
+        height: auto;
+    }
+
+    .container-customer {
+        width: 90%;
+    }
+
+    .customer-title-dot {
+        width: 600px;
+    }
+
+    .customer-title {
+        font-size: 32px;
+        width: 600px;
+    }
+
+    .customer-title-dot .dots {
+        margin-bottom: 60px;
+    }
+
+    .customer-box {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        height: auto;
+        gap: 20px;
+    }
+
+    .box {
+        width: 100%;
+        height: 280px;
+    }
+
+    .box .box-in {
+        margin: 30px 20px;
+    }
+
+    .box-description {
+        font-size: 18px;
+        line-height: 28px;
+    }
+
+    .note {
+        gap: 40px;
+    }
+
+    .prev,
+    .next {
+        font-size: 18px;
+    }
+}
+
+/* Small Mobile */
+@media (max-width: 480px) {
+    .customer {
+        padding: 40px 0;
+        max-width: 480px
+    }
+
+    .customer-title {
+        font-size: 24px;
+    }
+
+    .customer-box {
+        width: 100%;
+    }
+
+    .box {
+        width: 100%;
+        height: auto;
+    }
+
+    .box .box-in {
+        margin: 20px 10px;
+    }
+
+    .box-description {
+        font-size: 14px;
+        line-height: 22px;
+    }
+
+    .note {
+        gap: 10px;
+    }
+
+    .prev,
+    .next {
+        font-size: 14px;
+    }
+}
